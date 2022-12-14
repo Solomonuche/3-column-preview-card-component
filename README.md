@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://solomonuche.github.io/3-column-preview-card-component/](https://your-live-site-url.com)
 
 ## My process
 

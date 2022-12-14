@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; 
+font-family: 'Big Shoulders Display', cursive;*/
+
+/* Css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0E0E0E;
+    font-size: 15px;
+
+}
+
+
+/* Variables */
+:root{
+    --sedanBG: hsl(31, 77%, 52%);
+    --suvBG:  hsl(184, 100%, 22%);
+    --luxuryBG: hsl(179, 100%, 13%);
+    --pcolor: hsla(0, 0%, 100%, 0.75);
+    --headingbuttoncolor: hsl(0, 0%, 95%);
+    --bfont: 'Big Shoulders Display', cursive;
+    --nfont: 'Lexend Deca', sans-serif;
+  
+}
+
+
+/* div wrapper */
+div.wrapper {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    height: 100%;
+    justify-content: center;
+    margin-block: 5rem;
+    background-color: var(--headingbuttoncolor);
+}
+/* sedans */
+div.sedans  {
+    margin: 3rem 0rem 3rem 3rem;
+    background-color: var(--sedanBG);
+    padding: 2rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    max-width: 25%;
+}
+.sedanimg {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+.sedans h1 {
+    font-family: var(--bfont);
+    color: var(--headingbuttoncolor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+
+}
+.sedans p {
+    font-family: var(--nfont);
+    color: var(--pcolor);
+    font-weight: 400;
+    padding-bottom: 3rem;
+
+}
+.sedans button {
+    color: var(--sedanBG);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.sedans button:hover {
+    color: var(--pcolor);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pcolor);
+    margin-bottom: 1rem;
+    background-color: inherit;
+    cursor: pointer;
+}
+/* SUVS */
+div.suvs  {
+    margin: 3rem 0rem ;
+    background-color: var(--suvBG);
+    padding: 2rem;
+    max-width: 25%;
+
+}
+.suvimg {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+.suvs h1 {
+    font-family: var(--bfont);
+    color: var(--headingbuttoncolor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+
+}
+.suvs p {
+    font-family: var(--nfont);
+    color: var(--pcolor);
+    font-weight: 400;
+    padding-bottom: 3rem;
+
+}
+.suvs button {
+    color: var(--suvBG);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.suvs button:hover {
+    color: var(--pcolor);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pcolor);
+    margin-bottom: 1rem;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* Luxury */
+div.luxury  {
+    margin: 3rem 3rem 3rem 0rem ;
+    background-color: var(--luxuryBG);
+    padding: 2rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    max-width: 25%;
+
+}
+.luxuryimg {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+.luxury h1 {
+    font-family: var(--bfont);
+    color: var(--headingbuttoncolor);
+    font-weight: 700;
+    padding-bottom: 1rem;
+
+}
+.luxury p {
+    font-family: var(--nfont);
+    color: var(--pcolor);
+    font-weight: 400;
+    padding-bottom: 3rem;
+
+}
+.luxury button {
+    color: var(--luxuryBG);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+.luxury button:hover {
+    color: var(--pcolor);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--pcolor);
+    margin-bottom: 1rem;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* mobile view */
+@media only screen and (max-width: 375px) {
+    div.wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+        height: 100%;
+        justify-content: center;
+        margin-block: 5rem;
+        background-color: var(--headingbuttoncolor);
+    }
+    div.sedans  {
+        margin: 3rem 1rem 0rem 2rem;
+        background-color: var(--sedanBG);
+        padding: 2rem;
+        border-radius: 0.5rem 0.5rem 0rem 0rem;
+        max-width: 75%;
+    }
+    div.suvs  {
+        margin: 0rem 2rem ;
+        background-color: var(--suvBG);
+        padding: 2rem;
+        max-width: 75%;
+    
+    }
+    div.luxury  {
+        margin: 0rem 2rem 3rem 2rem  ;
+        background-color: var(--luxuryBG);
+        padding: 2rem;
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        max-width: 75%;
+    
+    }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; color: #ffffff; }
+.attribution a { color: hsl(228, 45%, 44%); }
